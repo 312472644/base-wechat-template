@@ -1,0 +1,11 @@
+/* subpackages/list-detail/index.wxss */
+.list-detail {
+  padding: 12px;
+  .card-title {
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}

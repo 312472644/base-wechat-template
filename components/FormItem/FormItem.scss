@@ -1,0 +1,24 @@
+/* components/FormItem/FormItem.wxss */
+// .cell-title {
+//   white-space: nowrap;
+// }
+
+.cell-center {
+  max-width: 100px;
+  flex: none !important;
+}
+
+.cell-note {
+  overflow: hidden;
+}
+
+.slot-note {
+  width: 100%;
+
+  .note {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+  }
+}

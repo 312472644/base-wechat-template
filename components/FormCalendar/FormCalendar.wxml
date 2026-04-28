@@ -1,0 +1,5 @@
+<!--components/FormCalendar/FormCalendar.wxml-->
+<view class="form-calendar">
+  <form-item bordered="{{bordered}}" required="{{required}}" title="{{title}}" note="{{noteText || '请选择'}}" bind:click="openPicker"></form-item>
+  <t-calendar visible="{{visible}}" value="{{calendarValue}}" minDate="{{calendarMinDate}}" maxDate="{{calendarMaxDate}}" type="{{type}}" switch-mode="{{switchMode}}" readonly="{{readonly}}" confirm-btn="确定" bind:confirm="handleConfirm" bind:close="onClose" format="{{format}}" />
+</view>

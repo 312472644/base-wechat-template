@@ -1,0 +1,18 @@
+<!--components/FormCheckBox/FormCheckBox.wxml-->
+<view class="form-checkbox">
+  <form-item wx:if="{{title}}" title="{{title}}" required="{{required}}" arrow="{{false}}" />
+  <!--卡片模式下全选-->
+  <t-checkbox wx:if="{{isCard && checkAll}}" bind:change="catchChange" checked="{{isCheckAll}}" placement="{{placement}}" icon="{{icon}}" label="全选" value="all" />
+  <t-checkbox-group value="{{value}}" borderless="{{borderless}}" bind:change="handleChange">
+    <view wx:if="{{!isCard}}">
+      <t-checkbox check-all="{{item.checkAll}}" wx:for="{{processOptions}}" content="{{item[props.content]}}" readonly="{{readonly}}" placement="{{placement}}" wx:key="index" icon="{{icon}}" label="{{item[props.label]}}" value="{{item[props.value]}}" />
+    </view>
+    <!--卡片模式-->
+    <view wx:else>
+      <view wx:for="{{processOptions}}" wx:key="index" class="card {{item.active ? 'card--active' : ''}}">
+        <t-icon wx:if="{{item.active}}" name="check" t-class="card__icon" />
+        <t-checkbox value="{{item[props.value]}}" label="{{item[props.label]}}" content="{{item[props.content]}}" icon="none" borderless="{{borderless}}" />
+      </view>
+    </view>
+  </t-checkbox-group>
+</view>

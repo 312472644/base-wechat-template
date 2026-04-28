@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "form-item": "/components/FormItem/FormItem",
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-image": "tdesign-miniprogram/image/image"
+  }
+}

@@ -1,0 +1,9 @@
+<!--components/TreePopup/TreePopup.wxml-->
+<view class="tree-popup">
+  <form-item bordered="{{bordered}}" required="{{required}}" title="{{title}}" note="{{noteText || '请选择'}}" bind:click="openPicker"></form-item>
+  <base-popup visible="{{visible}}" bind:close="handleClose" bind:confirm="handleConfirm">
+    <view>
+      <tree id="tree" nodes="{{nodes}}" lazy="{{lazy}}" load="{{load}}" value="{{value}}" props="{{props}}" bind:check="onCheckedChange" bind:render="renderNote" />
+    </view>
+  </base-popup>
+</view>

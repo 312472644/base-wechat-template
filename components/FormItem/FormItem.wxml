@@ -1,0 +1,6 @@
+<!--components/FormItem/FormItem.wxml-->
+<t-cell t-class-note="cell-note" t-class-center="cell-center" t-class-title="cell-title" bordered="{{bordered}}" required="{{required}}" title="{{title}}" arrow="{{arrow}}" bind:click="handleClick">
+  <view slot="note" class="slot-note">
+    <view class="note">{{note}}</view>
+  </view>
+</t-cell>

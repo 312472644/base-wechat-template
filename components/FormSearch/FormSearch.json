@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "t-search": "tdesign-miniprogram/search/search",
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-sticky": "tdesign-miniprogram/sticky/sticky",
+    "base-popup": "/components/BasePopup/BasePopup",
+    "t-button": "tdesign-miniprogram/button/button"
+  }
+}

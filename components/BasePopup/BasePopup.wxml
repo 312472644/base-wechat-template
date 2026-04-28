@@ -1,0 +1,15 @@
+<!--components/BasePopup/BasePopup.wxml-->
+<t-popup overlay-props="{{overlayProps}}" visible="{{visible}}" placement="{{placement}}" style="top: {{offsetTop||''}}" bind:visible-change="onVisibleChange">
+  <view class="popup-container" style="height: {{height}};">
+    <!--头部-->
+    <view wx:if="{{showHeader}}" class="header">
+      <view class="btn btn--cancel" aria-role="button" bindtap="handleClose">取消</view>
+      <view class="title">{{title}}</view>
+      <view class="btn btn--confirm" aria-role="button" bindtap="handleConfirm">确定</view>
+    </view>
+    <!--主体-->
+    <view class="body">
+      <slot></slot>
+    </view>
+  </view>
+</t-popup>

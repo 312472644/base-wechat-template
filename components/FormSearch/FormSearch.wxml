@@ -1,0 +1,28 @@
+<view class="form-search">
+  <t-sticky offset-top="{{offsetTop}}">
+    <view class="search">
+      <view class="input-search">
+        <t-search value="{{keyWord}}" bind:change="handleInputChange" bind:clear="handleClear" bind:enter="handleEnter" placeholder="{{placeholder}}" />
+      </view>
+      <view class="filter-icon" bind:tap="handleIconTap">
+        <t-icon color="#666" name="filter" size="48rpx" />
+      </view>
+    </view>
+  </t-sticky>
+</view>
+<!--搜索弹框-->
+<base-popup showHeader="{{false}}" height="50vh" overlayProps="{{overlayProps}}" offsetTop="{{popupOffsetTop}}" placement="top" visible="{{visible}}" using-custom-navbar bind:close="handleClose">
+  <view class="query-container">
+    <view class="query-form">
+      <slot></slot>
+    </view>
+    <view class="query-footer">
+      <view class="footer-item">
+        <t-button style="width: 90%;" theme="light" bind:tap="handleReset" icon="app">重置</t-button>
+      </view>
+      <view class="footer-item">
+        <t-button style="width: 90%;" theme="primary" bind:tap="handleQuery" icon="search">查询</t-button>
+      </view>
+    </view>
+  </view>
+</base-popup>

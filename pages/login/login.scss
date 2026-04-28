@@ -1,0 +1,75 @@
+/* pages/login/login.wxss */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 40rpx;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60rpx;
+  margin-bottom: 80rpx;
+}
+
+.logo {
+  width: 180rpx;
+  height: 180rpx;
+  margin-bottom: 40rpx;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.password-input {
+  margin-top: 30rpx;
+}
+
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30rpx 0;
+}
+
+/* 去掉记住密码复选框的白色背景色 */
+.options-row .t-checkbox__icon {
+  background-color: transparent !important;
+}
+
+.forgot-password {
+  font-size: 28rpx;
+  color: #0052d9;
+}
+
+.register-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.register-link {
+  color: #0052d9;
+  margin-left: 10rpx;
+}
+
+/* 其他登录方式相关样式已移除 */

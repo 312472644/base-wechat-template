@@ -1,0 +1,37 @@
+/* components/FormSearch/FormSearch.wxss */
+.form-search {
+  .search {
+    display: flex;
+    background-color: #fff;
+    padding: 12px;
+    .input-search {
+      flex: 1 0 0;
+      margin-right: 8px;
+    }
+    .filter-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.query-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .query-form {
+    flex: 1 0 0;
+    min-height: 0;
+    overflow-y: auto;
+  }
+  .query-footer {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    .footer-item {
+      display: flex;
+      justify-content: center;
+      flex: 1 0 0;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+<!--components/FormDateRangPicker/FormDateRangPicker.wxml-->
+<view>
+  <form-date-picker required="{{required}}" title="{{startTitle}}" value="{{startValue}}" start="{{minStartDate}}" end="{{maxStartDate}}" mode="{{mode}}" default-value="{{defaultValue}}" bind:confirm="handleStartConfirm"></form-date-picker>
+  <form-date-picker required="{{required}}" title="{{endTitle}}" value="{{endValue}}" start="{{minEndDate}}" end="{{maxEndDate}}" mode="{{mode}}" default-value="{{defaultValue}}" bind:confirm="handleEndConfirm"></form-date-picker>
+</view>

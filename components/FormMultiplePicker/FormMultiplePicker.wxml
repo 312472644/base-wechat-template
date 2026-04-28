@@ -1,0 +1,10 @@
+<!--components/FormMultiplePicker/FormMultiplePicker.wxml-->
+<view class="form-multiple-picker">
+  <form-item bordered="{{bordered}}" required="{{required}}" title="{{title}}" note="{{noteText || '请选择'}}" bind:click="openPicker"></form-item>
+  <base-popup visible="{{visible}}" bind:confirm="handleConfirm" bind:close="handleClose">
+    <view class="list">
+      <view wx:for="{{processOptions}}" data-item="{{item}}" wx:key="value" class="list-item {{item.active?'active':''}}" bind:tap="handleClick">{{item.label}}</view>
+    </view>
+  </base-popup>
+</view>
+<t-message id="t-message" />

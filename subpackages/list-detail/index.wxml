@@ -1,0 +1,19 @@
+<!--subpackages/list-detail/index.wxml-->
+<page-layout showCustomNavbar navbarTitle="详情" navigateUrl="/pages/list/list">
+  <view class="list-detail">
+    <view>
+      <view class="card-title">基本信息</view>
+      <t-cell title="单行标题" hover note="123" />
+      <t-cell title="单行标题" hover description="一段很长很长的内容文字一段很长很长的内容文字一段很长很长的内容文字一段很长很长的内容文字" />
+      <t-cell title="单行标题" hover note="123" />
+      <media-preview urls="{{mediaUrls}}" title="资源预览"></media-preview>
+    </view>
+    <view style="margin-top: 4px;">
+      <view class="card-title">其他信息</view>
+      <t-cell title="单行标题" hover note="123" />
+      <t-cell title="单行标题" hover description="一段很长很长的内容文字一段很长很长的内容文字一段很长很长的内容文字一段很长很长的内容文字" />
+      <t-cell title="单行标题" hover note="123" />
+      <media-preview urls="{{mediaUrls}}" title="资源预览"></media-preview>
+    </view>
+  </view>
+</page-layout>

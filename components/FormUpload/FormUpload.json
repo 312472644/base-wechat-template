@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "form-item": "/components/FormItem/FormItem",
+    "t-upload": "tdesign-miniprogram/upload/upload"
+  }
+}

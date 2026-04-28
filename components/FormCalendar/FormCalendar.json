@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "form-item": "/components/FormItem/FormItem",
+    "t-calendar": "tdesign-miniprogram/calendar/calendar"
+  }
+}

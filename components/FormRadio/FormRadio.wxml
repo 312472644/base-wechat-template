@@ -1,0 +1,16 @@
+<!--components/FormRadio/FormRadio.wxml-->
+<view class="form-radio">
+  <form-item wx:if="{{title}}" title="{{title}}" required="{{required}}" arrow="{{false}}"  />
+  <t-radio-group borderless="{{borderless}}" allowUncheck="{{allowUncheck}}" readonly="{{readonly}}" value="{{value}}" bind:change="handleChange">
+    <view wx:if="{{!isCard}}">
+      <t-radio wx:for="{{options}}" content="{{item[props.content]}}" placement="{{placement}}" block="{{block}}" wx:key="index" icon="{{icon}}" label="{{item[props.label]}}" value="{{item[props.value]}}" />
+    </view>
+    <!--卡片模式-->
+    <view wx:else>
+      <view wx:for="{{options}}" wx:key="index" class="card {{value == item[props.value] ? 'card--active' : ''}}">
+        <t-icon wx:if="{{value == item[props.value]}}" name="check" t-class="card__icon" />
+        <t-radio value="{{item[props.value]}}" label="{{item[props.label]}}" content="{{item[props.content]}}" icon="none" borderless />
+      </view>
+    </view>
+  </t-radio-group>
+</view>

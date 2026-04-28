@@ -1,0 +1,7 @@
+@import '../../assets/styles/_var.scss';
+
+.pulldown-refresh__content {
+  &.is-custom-tabbar {
+    padding-bottom: $custom-tabbar-height;
+  }
+}

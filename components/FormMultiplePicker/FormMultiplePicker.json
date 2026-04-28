@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "form-item": "/components/FormItem/FormItem",
+    "base-popup": "/components/BasePopup/BasePopup"
+  }
+}

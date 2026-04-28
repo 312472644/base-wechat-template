@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view class="login-container">
+  <view class="login-header">
+    <image class="logo" src="/assets/images/logo.png" mode="aspectFit"></image>
+    <view class="title">欢迎登录</view>
+    <view class="subtitle">请使用您的账号密码登录系统</view>
+  </view>
+
+  <view class="login-form">
+    <t-input value="{{username}}" placeholder="请输入用户名/手机号" prefixIcon="user" clearable bind:change="onUsernameChange" />
+    <t-input class="password-input" value="{{password}}" type="password" placeholder="请输入密码" prefixIcon="user-locked" clearable bind:change="onPasswordChange" />
+    <view class="options-row">
+      <t-checkbox style="background-color: transparent;" value="{{rememberPassword}}" bind:change="onRememberChange">记住密码</t-checkbox>
+      <view class="forgot-password" bind:tap="onForgotPassword">忘记密码?</view>
+    </view>
+    <t-button theme="primary" block size="large" bind:tap="onLogin">登录</t-button>
+    <view class="register-row">
+      <text>还没有账号？</text>
+      <text class="register-link" bind:tap="onRegister">立即注册</text>
+    </view>
+  </view>
+</view>

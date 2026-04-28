@@ -1,0 +1,16 @@
+{
+  "usingComponents": {
+    "t-image": "tdesign-miniprogram/image/image",
+    "t-tag": "tdesign-miniprogram/tag/tag",
+    "form-picker": "/components/FormPicker/FormPicker",
+    "form-date-picker": "/components/FormDatePicker/FormDatePicker",
+    "form-search": "/components/FormSearch/FormSearch",
+    "pull-down-refresh": "/components/PullDownRefresh/PullDownRefresh",
+    "t-tabs": "tdesign-miniprogram/tabs/tabs",
+    "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel",
+    "page-layout": "/components/PageLayout/PageLayout"
+  },
+  "navigationBarTitleText": "列表",
+  "navigationStyle": "custom",
+  "disableScroll": true
+}

@@ -1,0 +1,11 @@
+<!--components/CustomTabbar/CustomTabbar.wxml-->
+<view class="custom-tab-bar">
+  <t-tab-bar value="{{active}}" fixed="{{false}}" bindchange="onChange" shape="round" split="{{false}}">
+    <t-tab-bar-item style="{{ index === 1 ? 'transform: translateX(-10px);':'' }} {{ index === 2 ? 'transform: translateX(10px);':''}}" wx:for="{{list}}" wx:key="value" value="{{item.value}}" icon="{{item.icon}}">
+      {{item.label}}
+    </t-tab-bar-item>
+  </t-tab-bar>
+  <view class="special-item" bind:tap="onClick">
+    <t-icon name="plus" size="48rpx" color="#fff" />
+  </view>
+</view>

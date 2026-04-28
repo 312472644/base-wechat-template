@@ -1,0 +1,10 @@
+<!--components/PageLayout/PageLayout.wxml-->
+<view style="--navbar-height:{{navbarHeight}}" class="page-layout {{showCustomTabbar?'is-custom-tabbar':''}} {{showCustomNavbar?'is-custom-navbar':''}}">
+  <!--自定义头部导航栏-->
+  <view class="nav-bar" id="navbar" wx:if="{{showCustomNavbar}}">
+    <t-navbar title="{{navbarTitle}}" left-arrow="{{leftArrow}}" t-class-title="nav-title" bind:go-back="handleBack" />
+  </view>
+  <view class="main-content">
+    <slot></slot>
+  </view>
+</view>

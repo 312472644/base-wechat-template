@@ -1,0 +1,4 @@
+/**index.wxss**/
+.page-demo {
+  padding: var(--page-gap) 0;
+}

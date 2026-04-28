@@ -1,0 +1,5 @@
+<!--components/FormDatePicker/FormDatePicker.wxml-->
+<view class="form-datepicker">
+  <form-item bordered="{{bordered}}" required="{{required}}" title="{{title}}" note="{{noteText || '请选择'}}" bind:click="openPicker"></form-item>
+  <t-date-time-picker title="选择日期" visible="{{visible}}" mode="{{mode}}" value="{{value}}" default-value="{{defaultValue}}" format="{{format}}" bindchange="handleConfirm" bindcancel="handleCancel" start="{{start}}" end="{{end}}" />
+</view>

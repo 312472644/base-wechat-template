@@ -1,0 +1,20 @@
+<!--pages/form/form.wxml-->
+<page-layout showCustomTabbar>
+  <form-picker required show-search title="下拉选择" options="{{citys}}" bind:search="handleSearch" value="{{form.city}}" bind:confirm="handleConfirm">
+  </form-picker>
+  <form-date-picker required title="日期" value="{{form.date}}" bind:confirm="handleDateConfirm"></form-date-picker>
+  <form-calendar required title="日历" type="multiple" minDate="2025-08-01" value="{{form.calendarValue}}" bind:confirm="handleCalendar"></form-calendar>
+  <form-multiple-picker title="下拉多选" value="{{form.multipleValue}}" options="{{multipleOptions}}" props="{{multipleProps}}" bind:confirm="handleMultipleConfirm"></form-multiple-picker>
+  <form-date-range-picker required bind:confirm="handleDateRangeConfirm" startValue="{{form.startValue}}" endValue="{{form.endValue}}"></form-date-range-picker>
+  <tree-popup required title="树选择" nodes="{{nodes}}" value="{{value}}" props="{{props}}" bind:confirm="onTreeCheckedChange"></tree-popup>
+  <tree-popup required title="懒加载树" lazy nodes="{{nodes}}" load="{{loadNode}}" value="{{value}}" props="{{props}}" bind:confirm="onTreeCheckedChange"></tree-popup>
+  <form-radio required title="单选框" options="{{radioOptions}}" value="{{form.radioValue}}" bind:change="handleRadioChange">
+  </form-radio>
+  <form-checkbox checkAll title="复选框" options="{{checkboxOptions}}" value="{{form.checkValue}}" bind:change="handleCheckboxChange"></form-checkbox>
+  <media-preview urls="{{mediaUrls}}" title="资源预览"></media-preview>
+  <form-upload title="文件上传" files="{{files}}" bind:change="handleFileChange"></form-upload>
+  <view style="padding: 10px; display: flex; gap: 12px">
+    <t-button style="flex:1 0 0;" bind:tap="handleReset">重置</t-button>
+    <t-button style="flex:1 0 0;" theme="primary" bind:tap="handleSubmit">提交</t-button>
+  </view>
+</page-layout>

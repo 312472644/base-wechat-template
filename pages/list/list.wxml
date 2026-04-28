@@ -1,0 +1,31 @@
+<!--pages/list/list.wxml-->
+<page-layout showCustomTabbar showCustomNavbar leftArrow="{{false}}" navbarTitle="列表">
+  <view class="page-layout-list">
+    <t-tabs defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs">
+      <t-tab-panel label="选项1" value="0" />
+      <t-tab-panel label="选项2" value="1" />
+    </t-tabs>
+    <form-search form="{{form}}" bind:search="handleSearch" bind:reset="handleReset">
+      <form-date-picker title="时间" value="{{form.date}}" bind:confirm="handleDateConfirm"></form-date-picker>
+      <form-picker title="类别" options="{{categoryOptions}}" value="{{form.category}}" bind:confirm="handleCategoryConfirm">
+      </form-picker>
+    </form-search>
+    <view class="page-list">
+      <pull-down-refresh value="{{downRefresh}}" usingCustomTabbar bind:refresh="onRefresh" bind:reachBottom="onReachBottom">
+        <view class="list">
+          <view class="list-item" wx:for="{{useView.list}}" wx:key="id" bind:tap="toDetailPage">
+            <view>
+              <t-image shape="circle" src="{{item.avatar}}" mode="aspectFill" width="72" height="72" />
+            </view>
+            <view style="flex:1 0 0; font-size: 13px; padding-left: 12px; color:rgba(0, 0, 0, .6);">
+              <view style="padding-bottom: 8px;">
+                <t-tag theme="primary" variant="light">{{item.name}}</t-tag>
+              </view>
+              <view>{{item.createdAt}}</view>
+            </view>
+          </view>
+        </view>
+      </pull-down-refresh>
+    </view>
+  </view>
+</page-layout>

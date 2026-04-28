@@ -1,0 +1,8 @@
+$custom-tabbar-padding-top: 12px;
+$custom-tabbar-height: calc(env(safe-area-inset-bottom) + 56px + #{$custom-tabbar-padding-top});
+
+page {
+  --page-gap: 12px;
+  --td-brand-color: #0052d9;
+  --custom-tabbar-padding-top: $custom-tabbar-padding-top;
+}

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "t-input": "tdesign-miniprogram/input/input",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-checkbox": "tdesign-miniprogram/checkbox/checkbox",
+    "t-icon": "tdesign-miniprogram/icon/icon"
+  },
+  "navigationBarTitleText": "登录",
+  "navigationStyle": "custom"
+}

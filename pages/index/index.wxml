@@ -1,0 +1,23 @@
+<page-layout showCustomTabbar showCustomNavbar leftArrow="{{false}}" navbarTitle="首页">
+  <view style="padding: 16px 0;">
+    <view class="block_subtitle" style="display: flex; align-items: center;">
+      <t-icon color="rgba(0, 0, 0, .6)" name="transform" size="38rpx" />
+      <text style="padding-left: 4px; color:rgba(0, 0, 0, .6)">组件列表</text>
+    </view>
+    <t-grid class="block" hover theme="card" column="{{3}}">
+      <t-grid-item text="复选框" description="FormCheckBox" icon="component-checkbox" />
+      <t-grid-item text="日期选择" description="FormDatePicker" icon="calendar" />
+      <t-grid-item text="日期范围选择" description="FormDateRangPicker" icon="calendar-2" />
+      <t-grid-item text="日历选择" description="FormCalendar" icon="calendar-1" />
+      <t-grid-item text="下拉多选" description="FormMultiplePicker" icon="component-dropdown" />
+      <t-grid-item text="下拉选" description="FormPicker" icon="component-dropdown" />
+      <t-grid-item text="单选框" description="FormRadio" icon="component-radio" />
+      <t-grid-item text="搜索" description="FormSearch" icon="search" />
+      <t-grid-item text="附件上传" description="FormUpload" icon="cloud-upload" />
+      <t-grid-item text="媒体预览" description="MediaPreview" icon="media-library" />
+      <t-grid-item text="下拉刷新" description="PullDownRefresh" icon="refresh" />
+      <t-grid-item text="下拉树" description="TreePopup" icon="tree-round-dot" />
+      <t-grid-item text="空状态" description="Empty" icon="space" />
+    </t-grid>
+  </view>
+</page-layout>

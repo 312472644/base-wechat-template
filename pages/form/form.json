@@ -1,0 +1,17 @@
+{
+  "usingComponents": {
+    "form-picker": "/components/FormPicker/FormPicker",
+    "form-date-picker": "/components/FormDatePicker/FormDatePicker",
+    "form-date-range-picker": "/components/FormDateRangPicker/FormDateRangPicker",
+    "form-radio": "/components/FormRadio/FormRadio",
+    "form-checkbox": "/components/FormCheckBox/FormCheckBox",
+    "media-preview": "/components/MediaPreview/MediaPreview",
+    "form-multiple-picker": "/components/FormMultiplePicker/FormMultiplePicker",
+    "form-upload": "/components/FormUpload/FormUpload",
+    "t-button": "tdesign-miniprogram/button/button",
+    "form-calendar": "/components/FormCalendar/FormCalendar",
+    "page-layout": "/components/PageLayout/PageLayout",
+    "tree-popup": "/components/TreePopup/TreePopup"
+  },
+  "navigationBarTitleText": "表单"
+}

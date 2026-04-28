@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "form-item": "/components/FormItem/FormItem",
+    "base-popup": "/components/BasePopup/BasePopup",
+    "t-date-time-picker": "tdesign-miniprogram/date-time-picker/date-time-picker"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "form-item": "/components/FormItem/FormItem",
+    "t-cell": "tdesign-miniprogram/cell/cell",
+    "t-radio": "tdesign-miniprogram/radio/radio",
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-radio-group": "tdesign-miniprogram/radio-group/radio-group"
+  }
+}

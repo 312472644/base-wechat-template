@@ -1,0 +1,6 @@
+<!--components/PullDownRefresh/PullDownRefresh.wxml-->
+<t-pull-down-refresh value="{{value}}" usingCustomNavbar="{{usingCustomNavbar}}" loadingTexts="{{loadingTexts}}" bind:refresh="onRefresh" bind:scrolltolower="onScrolltolower">
+  <view class="pulldown-refresh__content {{usingCustomTabbar?'is-custom-tabbar':''}}">
+    <slot></slot>
+  </view>
+</t-pull-down-refresh>

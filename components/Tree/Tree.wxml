@@ -1,0 +1,25 @@
+<view class="tree">
+  <block wx:for="{{treeData}}" wx:key="id">
+    <view class="tree-node" style="padding-left: {{level === 0 ? 0 : 18}}px;">
+      <view class="node-line">
+        <!-- 展开图标 -->
+        <view class="expand-icon {{item.expanded ? 'expanded' : ''}}" bindtap="toggleNode" data-id="{{item.id}}">
+          <view style="display: {{item.showExpand ? 'block' : 'none' }};">
+            <van-icon size="16px" name="arrow" />
+          </view>
+        </view>
+
+        <!-- 多选框 -->
+        <van-checkbox disabled="{{item.disabled}}" shape="square" data-item="{{item}}" value="{{ checkedMap[item.id].checked }}" bind:change="onCheckChange"></van-checkbox>
+
+        <!-- 文本 -->
+        <text class="node-label">{{item[props.label || 'label']}}</text>
+      </view>
+
+      <!-- 子节点 -->
+      <view style="display: {{item.children.length > 0 && item.expanded?'block':'none'}};">
+        <tree lazy="{{lazy}}" props="{{props}}" load="{{load}}" nodes="{{item.children}}" level="{{level + 1}}" checkedMap="{{checkedMap}}" value="{{value}}" bind:change="onTreeCheckChange" />
+      </view>
+    </view>
+  </block>
+</view>

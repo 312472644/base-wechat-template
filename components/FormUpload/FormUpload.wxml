@@ -1,0 +1,8 @@
+<!--components/FormUpload/FormUpload.wxml-->
+<view class="form-upload">
+  <form-item bordered="{{bordered}}" arrow="{{false}}" required="{{required}}" title="{{title}}"></form-item>
+  <view class="upload-container">
+    <t-upload disabled="{{disabled}}" config="{{config}}" size-limit="{{sizeLimit}}" mediaType="{{mediaType}}" max="{{max}}" source="{{source}}" files="{{fileList}}" bind:add="handleAdd" bind:remove="handleRemove" bind:fail="handleFail">
+    </t-upload>
+  </view>
+</view>

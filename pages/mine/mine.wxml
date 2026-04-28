@@ -1,0 +1,4 @@
+<!--pages/mine/mine.wxml-->
+<view style="height: 100%; display: flex; justify-content: center; align-items: center; height: 50vh;">
+  <t-image src="/assets/images/todo.png" width="128" height="128" />
+</view>

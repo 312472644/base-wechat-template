@@ -1,0 +1,37 @@
+.tree {
+  font-size: 28rpx;
+  color: #333;
+  background-color: #fff;
+}
+
+.tree-node {
+  margin: 4rpx 0;
+}
+
+.node-line {
+  display: flex;
+  align-items: center;
+  padding: 12rpx 8rpx;
+  background-color: #fff;
+}
+
+
+.expand-icon {
+  font-size: 24rpx;
+  width: 32rpx;
+  text-align: center;
+  margin-right: 8rpx;
+  color: #666;
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+}
+
+.expand-icon.expanded {
+  transform: rotate(90deg);
+}
+
+.node-label {
+  margin-left: 8rpx;
+  font-weight: 500;
+  color: #222;
+}

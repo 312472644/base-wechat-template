@@ -1,0 +1,12 @@
+/* components/PageLayout/PageLayout.wxss */
+@import '../../assets/styles/_var.scss';
+
+.page-layout {
+  .main-content {
+    padding-bottom: calc(56px + env(safe-area-inset-bottom) + #{$custom-tabbar-padding-top});
+  }
+  .nav-title {
+    font-size: 13px;
+    font-weight: normal;
+  }
+}

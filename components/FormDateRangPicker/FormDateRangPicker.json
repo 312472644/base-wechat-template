@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "form-date-picker": "/components/FormDatePicker/FormDatePicker"
+  }
+}

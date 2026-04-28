@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tree": "/components/Tree/Tree",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-checkbox": "@vant/weapp/checkbox/index"
+  }
+}

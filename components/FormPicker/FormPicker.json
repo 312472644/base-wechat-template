@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "t-picker": "tdesign-miniprogram/picker/picker",
+    "t-search": "tdesign-miniprogram/search/search",
+    "t-picker-item": "tdesign-miniprogram/picker-item/picker-item",
+    "form-item": "/components/FormItem/FormItem",
+    "base-popup": "/components/BasePopup/BasePopup"
+  }
+}

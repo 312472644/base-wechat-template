@@ -1,0 +1,8 @@
+<!--components/Empty/Empty.wxml-->
+<view class="empty">
+  <t-empty description="{{description}}">
+    <view slot="image">
+      <image style="width: 200rpx;" mode="widthFix" src="{{image}}"></image>
+    </view>
+  </t-empty>
+</view>

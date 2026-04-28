@@ -1,0 +1,21 @@
+/* components/FormMultiplePicker/FormMultiplePicker.wxss */
+.form-multiple-picker {
+  .list {
+    padding: 0 12px 12px 12px;
+    .list-item {
+      text-align: center;
+      font-size: 14px;
+      padding: 8px;
+      border-radius: 6px;
+      background-color: #f3f3f3;
+      transition: all 0.3s linear;
+      &.active {
+        color: #f8f8f8;
+        background-color: #0052d9;
+      }
+      & + .list-item {
+        margin-top: 12px;
+      }
+    }
+  }
+}

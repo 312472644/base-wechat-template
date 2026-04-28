@@ -1,0 +1,17 @@
+<!--components/FormPicker/FormPicker.wxml-->
+<view class="form-picker">
+  <form-item bordered="{{bordered}}" required="{{required}}" title="{{title}}" note="{{noteText || '请选择'}}" bind:click="openPicker"></form-item>
+  <base-popup visible="{{visible}}" bind:close="handleClose" bind:confirm="handleConfirm">
+    <view class="picker-body">
+      <view wx:if="{{showSearch}}" class="search-container">
+        <t-search value="{{keyWord}}" placeholder="{{searchPlaceholder}}" bind:clear="handleSearch" bind:submit="handleSearch" />
+      </view>
+      <view class="picker-container">
+        <t-picker id="t-picker" style="height: 100%;" keys="{{props}}" header="{{false}}" value="{{value}}" data-key="{{props.value}}" use-popup="{{false}}">
+          <t-picker-item options="{{options}}" format="{{formatter}}">
+          </t-picker-item>
+        </t-picker>
+      </view>
+    </view>
+  </base-popup>
+</view>

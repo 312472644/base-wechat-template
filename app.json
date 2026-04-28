@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/form/form",
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/list/list"
+  ],
+  "subPackages": [
+    {
+      "root": "subpackages",
+      "name": "",
+      "pages": [
+        "list-detail/index"
+      ]
+    }
+  ],
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/form/form",
+        "text": "表单"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "列表"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "模板",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
